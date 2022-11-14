@@ -3,11 +3,9 @@ import mongoose from "mongoose";
 //Define Schema
 const studentSchema = mongoose.Schema({
     name: { type: String, required: true, trim: true },
-    age: { type: Number, required: true, min: 18, max: 60 },
+    age: { type: Number, required: true },
     fees: {
-        type: mongoose.Decimal128, required: true, validate: (v) => {
-            return v >= 5000.50
-        }
+        type: mongoose.Decimal128, required: true
     }
 });
 

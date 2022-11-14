@@ -70,6 +70,7 @@ class StudentController {
         try {
             console.log(req.params.id);
             await studentModel.findByIdAndDelete(req.params.id);
+            res.redirect('/student')
         } catch (error) {
             console.log(`Error`);
             res.end(`<h1 style="background: black;color: red"> Error:- ${error}. </h1>`);

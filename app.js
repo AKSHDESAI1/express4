@@ -4,8 +4,8 @@ import router from "./routes/web.js";
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-// const DATABASE_URL = process.env.DATABASE_URL || "mongodb://localhost://27017";
-const DATABASE_URL = process.env.DATABASE_URL || "mongodb+srv://aksh2137:aksh2137@cluster0.jpqpxva.mongodb.net/";
+const DATABASE_URL = process.env.DATABASE_URL || "mongodb://localhost://27017";
+// const DATABASE_URL = process.env.DATABASE_URL || "mongodb+srv://aksh2137:aksh2137@cluster0.jpqpxva.mongodb.net/";
 
 //Connect Database
 connectDb(DATABASE_URL);
