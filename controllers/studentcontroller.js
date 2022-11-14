@@ -29,7 +29,7 @@ class StudentController {
             //       name: 'Sonam',
             //       age: 34,
             //       fees: ("6000")
-            //     }
+            //     } 
             //   ];
             // console.log(result);
             res.render("index", { result });
